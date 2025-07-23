@@ -1,4 +1,4 @@
-from .firebase_config import FirebaseConfig
+from .firebase_config import FirebaseAuth as BaseFirebaseAuth
 
 
 class FirebaseAuth:
@@ -11,8 +11,7 @@ class FirebaseAuth:
         """
         Initializes the FirebaseAuth instance and sets up Firebase authentication.
         """
-        firebase_config = FirebaseConfig()
-        self.auth = firebase_config.auth
+        self.auth = BaseFirebaseAuth()
         self.current_user = None
 
     def sign_up(self, email: str, password: str) -> dict:

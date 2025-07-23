@@ -1,8 +1,16 @@
-firebase-admin~=6.8.0
-Pyrebase~=3.0.27
-python-dotenv~=1.1.0
-protobuf~=5.29.4
-customtkinter~=5.2.2
-reportlab~=4.4.1
-requests~=2.32.3
-platformdirs~=4.3.8
+# Core dependencies
+customtkinter>=5.2.0
+python-dotenv>=1.0.0
+pillow>=11.3.0
+reportlab>=4.4.2
+platformdirs>=4.3.8
+
+# Firebase dependencies (Official SDK only)
+firebase-admin>=7.0.0
+protobuf>=4.21.0,<5.0.0
+
+# HTTP requests for Firebase REST API
+requests>=2.25.0
+
+# JSON Web Tokens for authentication
+PyJWT>=2.8.0

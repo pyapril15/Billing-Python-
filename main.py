@@ -1,5 +1,3 @@
-import os
-
 import customtkinter as ctk
 
 from auth.firebase_auth import FirebaseAuth
